@@ -124,7 +124,7 @@ namespace SirenOfShame.Lib.Watcher
                 BuildStatusMessage = BuildStatusMessage,
                 ImageIndex = (int)BallIndex,
                 StartTimeShort = FormatAsDayMonthTime(StartedTime),
-                LocalStartTime = !previousStatusExists && StartedTime.HasValue ? StartedTime.Value : LocalStartTime,
+                LocalStartTime = StartedTime.HasValue ? StartedTime.Value : LocalStartTime,
                 Duration = duration,
                 RequestedByRawName = RequestedBy,
                 Comment = Comment,
